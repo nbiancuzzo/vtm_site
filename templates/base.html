@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock%}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+</head>
+<body>
+    <div>
+        <nav class="navItem" >
+            <div>
+              <h1 class="header">Vertical Tank Maintenance</a>
+              <div>
+                <ul>
+                  <li class="navItem">
+                    <a  href="/">Home</a>
+                  </li>
+                  <li class="navItem">
+                    <a href="/about">About</a>
+                  </li>
+                  <li class="navItem">
+                    <a href="/estimate">Estimate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        
+        {% block body %}
+
+        {% endblock %}
+
+        <footer>
+            <div class="foot">
+                ©VTM 2022
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
