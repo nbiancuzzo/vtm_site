@@ -1,0 +1,23 @@
+body{
+    background-color: azure;
+}
+
+nav {
+    background-color: black;
+}
+h1 {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+li {
+    text-decoration: none;
+    color: white;
+}
+
+.foot {
+    background-color: black;
+    color: white;
+    padding: 5pt;
+}
